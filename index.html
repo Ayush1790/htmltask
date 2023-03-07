@@ -9,48 +9,30 @@
   <body>
     <h2>CatPhotoApp</h2>
     <main>
-      <p>
-        View More
-        <a href="#" target="_blank">cat photos</a>
-      </p>
-      <a href="#">
-        <img
-          src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-          alt="A cute orange cat lying on its back."
-      /></a>
-
+      <p>Click here to view more <a href="#">cat photos</a>.</p>
+    
+      <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+    
+      <p>Things cats love:</p>
       <ul>
-        <li>Cats love sleeping and napping.</li>
-        <li>Cats love a clean and private bathroom space.</li>
-        <li>Cats love — and need — to scratch.</li>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
       </ul>
       <p>Top 3 things cats hate:</p>
       <ol>
-        <li>A Dirty Litter Box</li>
-        <li>Loud Noises</li>
-        <li>Change</li>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
       </ol>
       <form action="https://www.freecatphotoapp.com/submit-cat-photo">
-        <input type="text" placeholder="cat photo URL" required />
+        <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+        <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+        <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving"> Loving</label>
+        <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+        <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
+        <input type="text" placeholder="cat photo URL" required>
         <button type="submit">Submit</button>
-        <br />
-        <label> <input type="radio" name="indoor-outdoor" />Indoor </label>
-        <label> <input type="radio" name="indoor-outdoor" />Outdoor </label>
-        <br />
-        <input type="text" placeholder="cat photo URL" required /><br />
-        <label
-          ><input id="loving" type="checkbox" name="personality" />Loving</label
-        ><br />
-        <label
-          ><input
-            id="caring"
-            type="checkbox"
-            name="personality"
-          />Careing</label
-        ><br />
-        <label
-          ><input id="foody" type="checkbox" name="personality" />foody</label
-        ><br />
       </form>
     </main>
     <!-- Say Hello to HTML Elements -->
@@ -67,7 +49,7 @@
     <!-- Nest an Anchor Element within a Paragraph -->
     <!-- Make Dead Links Using the Hash Symbol -->
     <!-- Turn an Image into a Link -->
-    <!-- Create a Bulleted Unordered List -->Create a Set of Checkboxes
+    <!-- Create a Bulleted Unordered List -->   
     <!-- Create an Ordered List -->
     <!-- Create a Text Field -->
     <!-- Add Placeholder Text to a Text Field -->
@@ -75,5 +57,6 @@
     <!-- Use HTML5 to Require a Field -->
     <!-- Create a Set of Radio Buttons -->
     <!-- Create a Set of Checkboxes -->
+    <!-- Use the value attribute with Radio Buttons and Checkboxes -->
   </body>
 </html>
